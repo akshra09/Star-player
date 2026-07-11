@@ -1,0 +1,70 @@
+:root {
+  --lilac-bg: #e3d6f5;
+  --lilac-bg-2: #d6c5ee;
+  --shell-white: #f7f4fb;
+  --shell-shadow: #c9bbe0;
+  --screen-blue: #eaf1fb;
+  --ink: #4a4467;
+  --ink-soft: #7a72a0;
+  --pink: #ffc4de;
+  --pink-deep: #ff9dc4;
+  --mint: #bdf5e0;
+  --mint-deep: #7fe6bd;
+  --sky: #bcdcf9;
+  --sky-deep: #8dc3f2;
+  --yellow: #fff3b0;
+  --lav-accent: #b7a6e6;
+  --heart-pink: #ff8fb3;
+  --font-display: 'Press Start 2P', monospace;
+  --font-body: 'Quicksand', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--ink);
+}
+
+body {
+  background: radial-gradient(circle at 20% 10%, #f0e6fb 0%, var(--lilac-bg) 45%, var(--lilac-bg-2) 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+  position: relative;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--pink-deep);
+  color: white;
+}
+
+/* scrollbars kept dainty */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--lav-accent);
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
