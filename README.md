@@ -59,14 +59,6 @@ Open the printed local URL (usually `http://127.0.0.1:5173`).
 This is a static single-page app — no backend/server needed — so any
 static host works. **Vercel** is the easiest:
 
-### Vercel (recommended)
-
-1. Push this folder to a GitHub repo.
-2. Go to https://vercel.com → **Add New Project** → import that repo.
-3. Framework preset: **Vite** (auto-detected).
-4. Under **Environment Variables**, add:
-   - `VITE_YOUTUBE_API_KEY` = your key from step 1
-5. Deploy. That's your permanent link — open it from any device.
 
 ### Netlify
 
